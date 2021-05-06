@@ -21,5 +21,15 @@ namespace OOP_Calculator_JACOB
         {
 
         }
+
+        private void button_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
