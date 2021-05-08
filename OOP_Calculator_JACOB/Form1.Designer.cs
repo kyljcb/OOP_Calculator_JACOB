@@ -32,8 +32,8 @@ namespace OOP_Calculator_JACOB
             this.button_0 = new System.Windows.Forms.Button();
             this.button_Point = new System.Windows.Forms.Button();
             this.button_Plus = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.button_Equals = new System.Windows.Forms.Button();
+            this.button_Minus = new System.Windows.Forms.Button();
             this.button_3 = new System.Windows.Forms.Button();
             this.button_2 = new System.Windows.Forms.Button();
             this.button_1 = new System.Windows.Forms.Button();
@@ -42,13 +42,13 @@ namespace OOP_Calculator_JACOB
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.button_Clear = new System.Windows.Forms.Button();
+            this.button_Multiply = new System.Windows.Forms.Button();
             this.button_6 = new System.Windows.Forms.Button();
             this.button_5 = new System.Windows.Forms.Button();
             this.button_4 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button_Clearent = new System.Windows.Forms.Button();
+            this.button_Divide = new System.Windows.Forms.Button();
             this.button_9 = new System.Windows.Forms.Button();
             this.button_8 = new System.Windows.Forms.Button();
             this.button_7 = new System.Windows.Forms.Button();
@@ -86,23 +86,25 @@ namespace OOP_Calculator_JACOB
             this.button_Plus.Text = "+";
             this.button_Plus.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button_Equals
             // 
-            this.button5.Location = new System.Drawing.Point(316, 282);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(70, 158);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button_Equals.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Equals.Location = new System.Drawing.Point(316, 282);
+            this.button_Equals.Name = "button_Equals";
+            this.button_Equals.Size = new System.Drawing.Size(70, 158);
+            this.button_Equals.TabIndex = 4;
+            this.button_Equals.Text = "=";
+            this.button_Equals.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // button_Minus
             // 
-            this.button7.Location = new System.Drawing.Point(240, 282);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(70, 70);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button_Minus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Minus.Location = new System.Drawing.Point(240, 282);
+            this.button_Minus.Name = "button_Minus";
+            this.button_Minus.Size = new System.Drawing.Size(70, 70);
+            this.button_Minus.TabIndex = 8;
+            this.button_Minus.Text = "-";
+            this.button_Minus.UseVisualStyleBackColor = true;
             // 
             // button_3
             // 
@@ -179,23 +181,25 @@ namespace OOP_Calculator_JACOB
             this.button20.Text = "button20";
             this.button20.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // button_Clear
             // 
-            this.button11.Location = new System.Drawing.Point(316, 196);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(70, 70);
-            this.button11.TabIndex = 14;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.button_Clear.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Clear.Location = new System.Drawing.Point(316, 196);
+            this.button_Clear.Name = "button_Clear";
+            this.button_Clear.Size = new System.Drawing.Size(70, 70);
+            this.button_Clear.TabIndex = 14;
+            this.button_Clear.Text = "C";
+            this.button_Clear.UseVisualStyleBackColor = true;
             // 
-            // button12
+            // button_Multiply
             // 
-            this.button12.Location = new System.Drawing.Point(240, 196);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(70, 70);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button_Multiply.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Multiply.Location = new System.Drawing.Point(240, 196);
+            this.button_Multiply.Name = "button_Multiply";
+            this.button_Multiply.Size = new System.Drawing.Size(70, 70);
+            this.button_Multiply.TabIndex = 13;
+            this.button_Multiply.Text = "*";
+            this.button_Multiply.UseVisualStyleBackColor = true;
             // 
             // button_6
             // 
@@ -227,23 +231,25 @@ namespace OOP_Calculator_JACOB
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // button_Clearent
             // 
-            this.button21.Location = new System.Drawing.Point(316, 111);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(70, 70);
-            this.button21.TabIndex = 19;
-            this.button21.Text = "button21";
-            this.button21.UseVisualStyleBackColor = true;
+            this.button_Clearent.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Clearent.Location = new System.Drawing.Point(316, 111);
+            this.button_Clearent.Name = "button_Clearent";
+            this.button_Clearent.Size = new System.Drawing.Size(70, 70);
+            this.button_Clearent.TabIndex = 19;
+            this.button_Clearent.Text = "CE";
+            this.button_Clearent.UseVisualStyleBackColor = true;
             // 
-            // button22
+            // button_Divide
             // 
-            this.button22.Location = new System.Drawing.Point(240, 111);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(70, 70);
-            this.button22.TabIndex = 18;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
+            this.button_Divide.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Divide.Location = new System.Drawing.Point(240, 111);
+            this.button_Divide.Name = "button_Divide";
+            this.button_Divide.Size = new System.Drawing.Size(70, 70);
+            this.button_Divide.TabIndex = 18;
+            this.button_Divide.Text = "/";
+            this.button_Divide.UseVisualStyleBackColor = true;
             // 
             // button_9
             // 
@@ -289,26 +295,27 @@ namespace OOP_Calculator_JACOB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 454);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button_Clearent);
+            this.Controls.Add(this.button_Divide);
             this.Controls.Add(this.button_9);
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_7);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.button_Clear);
+            this.Controls.Add(this.button_Multiply);
             this.Controls.Add(this.button_6);
             this.Controls.Add(this.button_5);
             this.Controls.Add(this.button_4);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button_Minus);
             this.Controls.Add(this.button_3);
             this.Controls.Add(this.button_2);
             this.Controls.Add(this.button_1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button_Equals);
             this.Controls.Add(this.button_Plus);
             this.Controls.Add(this.button_Point);
             this.Controls.Add(this.button_0);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -320,8 +327,8 @@ namespace OOP_Calculator_JACOB
         private System.Windows.Forms.Button button_0;
         private System.Windows.Forms.Button button_Point;
         private System.Windows.Forms.Button button_Plus;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button_Equals;
+        private System.Windows.Forms.Button button_Minus;
         private System.Windows.Forms.Button button_3;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button_1;
@@ -330,13 +337,13 @@ namespace OOP_Calculator_JACOB
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button_Clear;
+        private System.Windows.Forms.Button button_Multiply;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button_4;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button_Clearent;
+        private System.Windows.Forms.Button button_Divide;
         private System.Windows.Forms.Button button_9;
         private System.Windows.Forms.Button button_8;
         private System.Windows.Forms.Button button_7;
