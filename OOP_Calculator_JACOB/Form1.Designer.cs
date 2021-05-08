@@ -47,7 +47,7 @@ namespace OOP_Calculator_JACOB
             this.button_6 = new System.Windows.Forms.Button();
             this.button_5 = new System.Windows.Forms.Button();
             this.button_4 = new System.Windows.Forms.Button();
-            this.button_Clearent = new System.Windows.Forms.Button();
+            this.button_Delete = new System.Windows.Forms.Button();
             this.button_Divide = new System.Windows.Forms.Button();
             this.button_9 = new System.Windows.Forms.Button();
             this.button_8 = new System.Windows.Forms.Button();
@@ -88,7 +88,7 @@ namespace OOP_Calculator_JACOB
             // 
             // button_Equals
             // 
-            this.button_Equals.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Equals.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_Equals.Location = new System.Drawing.Point(316, 282);
             this.button_Equals.Name = "button_Equals";
             this.button_Equals.Size = new System.Drawing.Size(70, 158);
@@ -98,7 +98,7 @@ namespace OOP_Calculator_JACOB
             // 
             // button_Minus
             // 
-            this.button_Minus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Minus.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_Minus.Location = new System.Drawing.Point(240, 282);
             this.button_Minus.Name = "button_Minus";
             this.button_Minus.Size = new System.Drawing.Size(70, 70);
@@ -184,11 +184,11 @@ namespace OOP_Calculator_JACOB
             // button_Clear
             // 
             this.button_Clear.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Clear.Location = new System.Drawing.Point(316, 196);
+            this.button_Clear.Location = new System.Drawing.Point(316, 111);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(70, 70);
             this.button_Clear.TabIndex = 14;
-            this.button_Clear.Text = "C";
+            this.button_Clear.Text = "AC";
             this.button_Clear.UseVisualStyleBackColor = true;
             // 
             // button_Multiply
@@ -198,7 +198,7 @@ namespace OOP_Calculator_JACOB
             this.button_Multiply.Name = "button_Multiply";
             this.button_Multiply.Size = new System.Drawing.Size(70, 70);
             this.button_Multiply.TabIndex = 13;
-            this.button_Multiply.Text = "*";
+            this.button_Multiply.Text = "x";
             this.button_Multiply.UseVisualStyleBackColor = true;
             // 
             // button_6
@@ -231,25 +231,26 @@ namespace OOP_Calculator_JACOB
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
             // 
-            // button_Clearent
+            // button_Delete
             // 
-            this.button_Clearent.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Clearent.Location = new System.Drawing.Point(316, 111);
-            this.button_Clearent.Name = "button_Clearent";
-            this.button_Clearent.Size = new System.Drawing.Size(70, 70);
-            this.button_Clearent.TabIndex = 19;
-            this.button_Clearent.Text = "CE";
-            this.button_Clearent.UseVisualStyleBackColor = true;
+            this.button_Delete.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Delete.Location = new System.Drawing.Point(240, 111);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(70, 70);
+            this.button_Delete.TabIndex = 19;
+            this.button_Delete.Text = "DEL";
+            this.button_Delete.UseVisualStyleBackColor = true;
             // 
             // button_Divide
             // 
-            this.button_Divide.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Divide.Location = new System.Drawing.Point(240, 111);
+            this.button_Divide.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Divide.Location = new System.Drawing.Point(316, 196);
             this.button_Divide.Name = "button_Divide";
             this.button_Divide.Size = new System.Drawing.Size(70, 70);
             this.button_Divide.TabIndex = 18;
-            this.button_Divide.Text = "/";
+            this.button_Divide.Text = "÷";
             this.button_Divide.UseVisualStyleBackColor = true;
+            this.button_Divide.Click += new System.EventHandler(this.button_Divide_Click);
             // 
             // button_9
             // 
@@ -295,7 +296,7 @@ namespace OOP_Calculator_JACOB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 454);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button_Clearent);
+            this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_Divide);
             this.Controls.Add(this.button_9);
             this.Controls.Add(this.button_8);
@@ -342,7 +343,7 @@ namespace OOP_Calculator_JACOB
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button_4;
-        private System.Windows.Forms.Button button_Clearent;
+        private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Button button_Divide;
         private System.Windows.Forms.Button button_9;
         private System.Windows.Forms.Button button_8;

@@ -31,5 +31,10 @@ namespace OOP_Calculator_JACOB
         {
 
         }
+
+        private void button_Divide_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
