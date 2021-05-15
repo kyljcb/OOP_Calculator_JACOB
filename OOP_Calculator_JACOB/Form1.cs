@@ -22,19 +22,15 @@ namespace OOP_Calculator_JACOB
 
         }
 
-        private void button_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button25_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Divide_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            textBox1.Text = textBox1.Text + button.Text;
         }
     }
 }

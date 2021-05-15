@@ -64,7 +64,7 @@ namespace OOP_Calculator_JACOB
             this.button_0.TabIndex = 0;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = true;
-            this.button_0.Click += new System.EventHandler(this.button_1_Click);
+            this.button_0.Click += new System.EventHandler(this.button_Click);
             // 
             // button_Point
             // 
@@ -115,6 +115,7 @@ namespace OOP_Calculator_JACOB
             this.button_3.TabIndex = 7;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = true;
+            this.button_3.Click += new System.EventHandler(this.button_Click);
             // 
             // button_2
             // 
@@ -125,6 +126,7 @@ namespace OOP_Calculator_JACOB
             this.button_2.TabIndex = 6;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = true;
+            this.button_2.Click += new System.EventHandler(this.button_Click);
             // 
             // button_1
             // 
@@ -135,6 +137,7 @@ namespace OOP_Calculator_JACOB
             this.button_1.TabIndex = 5;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = true;
+            this.button_1.Click += new System.EventHandler(this.button_Click);
             // 
             // button16
             // 
@@ -210,6 +213,7 @@ namespace OOP_Calculator_JACOB
             this.button_6.TabIndex = 12;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = true;
+            this.button_6.Click += new System.EventHandler(this.button_Click);
             // 
             // button_5
             // 
@@ -220,6 +224,7 @@ namespace OOP_Calculator_JACOB
             this.button_5.TabIndex = 11;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = true;
+            this.button_5.Click += new System.EventHandler(this.button_Click);
             // 
             // button_4
             // 
@@ -230,6 +235,7 @@ namespace OOP_Calculator_JACOB
             this.button_4.TabIndex = 10;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
+            this.button_4.Click += new System.EventHandler(this.button_Click);
             // 
             // button_Delete
             // 
@@ -261,6 +267,7 @@ namespace OOP_Calculator_JACOB
             this.button_9.TabIndex = 17;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = true;
+            this.button_9.Click += new System.EventHandler(this.button_Click);
             // 
             // button_8
             // 
@@ -271,6 +278,7 @@ namespace OOP_Calculator_JACOB
             this.button_8.TabIndex = 16;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = true;
+            this.button_8.Click += new System.EventHandler(this.button_Click);
             // 
             // button_7
             // 
@@ -281,7 +289,7 @@ namespace OOP_Calculator_JACOB
             this.button_7.TabIndex = 15;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = true;
-            this.button_7.Click += new System.EventHandler(this.button25_Click);
+            this.button_7.Click += new System.EventHandler(this.button_Click);
             // 
             // textBox1
             // 
