@@ -12,6 +12,9 @@ namespace OOP_Calculator_JACOB
 {
     public partial class Form1 : Form
     {
+        int result_Value = 0;
+        string operation_Performed = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -22,15 +25,18 @@ namespace OOP_Calculator_JACOB
 
         }
 
-        private void button_Divide_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             textBox1.Text = textBox1.Text + button.Text;
+        }
+
+        private void operator_Click(object sender, EventArgs e)
+        {
+
+            Button button = (Button)sender;
+            operation_Performed = button.Text;
+            result_Value = int.Parse(textBox1.Text);
         }
     }
 }

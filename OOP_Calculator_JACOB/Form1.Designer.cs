@@ -85,6 +85,7 @@ namespace OOP_Calculator_JACOB
             this.button_Plus.TabIndex = 3;
             this.button_Plus.Text = "+";
             this.button_Plus.UseVisualStyleBackColor = true;
+            this.button_Plus.Click += new System.EventHandler(this.operator_Click);
             // 
             // button_Equals
             // 
@@ -105,6 +106,7 @@ namespace OOP_Calculator_JACOB
             this.button_Minus.TabIndex = 8;
             this.button_Minus.Text = "-";
             this.button_Minus.UseVisualStyleBackColor = true;
+            this.button_Minus.Click += new System.EventHandler(this.operator_Click);
             // 
             // button_3
             // 
@@ -203,6 +205,7 @@ namespace OOP_Calculator_JACOB
             this.button_Multiply.TabIndex = 13;
             this.button_Multiply.Text = "x";
             this.button_Multiply.UseVisualStyleBackColor = true;
+            this.button_Multiply.Click += new System.EventHandler(this.operator_Click);
             // 
             // button_6
             // 
@@ -256,7 +259,7 @@ namespace OOP_Calculator_JACOB
             this.button_Divide.TabIndex = 18;
             this.button_Divide.Text = "÷";
             this.button_Divide.UseVisualStyleBackColor = true;
-            this.button_Divide.Click += new System.EventHandler(this.button_Divide_Click);
+            this.button_Divide.Click += new System.EventHandler(this.operator_Click);
             // 
             // button_9
             // 
