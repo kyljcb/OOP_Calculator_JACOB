@@ -38,5 +38,25 @@ namespace OOP_Calculator_JACOB
             operation_Performed = button.Text;
             result_Value = int.Parse(textBox1.Text);
         }
+
+        private void button_Equals_Click(object sender, EventArgs e)
+        {
+            switch(operation_Performed)
+            {
+                case "+":
+                    textBox1.Text = (result_Value + int.Parse(textBox1.Text)).ToString();
+                    break;
+                case "-":
+                    textBox1.Text = (result_Value - int.Parse(textBox1.Text)).ToString();
+                    break;
+                case "x":
+                    textBox1.Text = (result_Value * int.Parse(textBox1.Text)).ToString();
+                    break;
+                case "÷":
+                    textBox1.Text = (result_Value / int.Parse(textBox1.Text)).ToString();
+                    break;
+
+            }
+        }
     }
 }

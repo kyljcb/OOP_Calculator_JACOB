@@ -96,6 +96,7 @@ namespace OOP_Calculator_JACOB
             this.button_Equals.TabIndex = 4;
             this.button_Equals.Text = "=";
             this.button_Equals.UseVisualStyleBackColor = true;
+            this.button_Equals.Click += new System.EventHandler(this.button_Equals_Click);
             // 
             // button_Minus
             // 
