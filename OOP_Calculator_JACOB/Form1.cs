@@ -35,7 +35,18 @@ namespace OOP_Calculator_JACOB
             Button button = (Button)sender;
 
             textBox1.Text = textBox1.Text + button.Text;
+
            
+        }
+
+        private void button_Click_Decimal(object sender, EventArgs e)
+        {
+            Button decimal_Button = (Button)sender;
+
+            textBox1.Text = textBox1.Text + decimal_Button.Text;
+
+            decimal_Button.Enabled = false;
+
         }
 
         private void operator_Click(object sender, EventArgs e)
@@ -64,10 +75,7 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
                     break;
                 default:
-                    break;
-
-
-                    
+                    break;      
 
             }
         }
@@ -75,16 +83,16 @@ namespace OOP_Calculator_JACOB
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+
+            decimal_Button.enabled = true;
+         
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-             
-        }
-
+  
         private void button_Delete_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
         }
+
     }
 }

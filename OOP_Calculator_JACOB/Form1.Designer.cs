@@ -75,7 +75,7 @@ namespace OOP_Calculator_JACOB
             this.button_Point.TabIndex = 2;
             this.button_Point.Text = ".";
             this.button_Point.UseVisualStyleBackColor = true;
-            this.button_Point.Click += new System.EventHandler(this.button_Click);
+            this.button_Point.Click += new System.EventHandler(this.button_Click_Decimal);
             // 
             // button_Plus
             // 
@@ -306,7 +306,6 @@ namespace OOP_Calculator_JACOB
             this.textBox1.Size = new System.Drawing.Size(373, 38);
             this.textBox1.TabIndex = 20;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
