@@ -12,7 +12,7 @@ namespace OOP_Calculator_JACOB
 {
     public partial class Form1 : Form
     {
-        int result_Value = 0;
+        double result_Value = 0;
         string operation_Performed = "";
         bool operation_Pressed = false;
 
@@ -30,8 +30,10 @@ namespace OOP_Calculator_JACOB
         {
             if ((textBox1.Text == "") || (operation_Pressed))
                 textBox1.Clear();
+            operation_Pressed = false;
 
             Button button = (Button)sender;
+
             textBox1.Text = textBox1.Text + button.Text;
            
         }
@@ -41,7 +43,7 @@ namespace OOP_Calculator_JACOB
 
             Button button = (Button)sender;
             operation_Performed = button.Text;
-            result_Value = int.Parse(textBox1.Text);
+            result_Value = Double.Parse(textBox1.Text);
             operation_Pressed = true;
         }
 
@@ -50,19 +52,22 @@ namespace OOP_Calculator_JACOB
             switch(operation_Performed)
             {
                 case "+":
-                    textBox1.Text = (result_Value + int.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result_Value + Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "-":
-                    textBox1.Text = (result_Value - int.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result_Value - Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "x":
-                    textBox1.Text = (result_Value * int.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result_Value * Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "÷":
-                    textBox1.Text = (result_Value / int.Parse(textBox1.Text)).ToString();
+                    textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
+                    break;
+                default:
                     break;
 
-                    operation_Pressed = false;
+
+                    
 
             }
         }
@@ -75,6 +80,11 @@ namespace OOP_Calculator_JACOB
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
              
+        }
+
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
         }
     }
 }
