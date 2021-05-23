@@ -15,7 +15,7 @@ namespace OOP_Calculator_JACOB
         double result_Value = 0;
         string operation_Performed = "";
         bool operation_Pressed = false;
-
+       
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +46,8 @@ namespace OOP_Calculator_JACOB
             textBox1.Text = textBox1.Text + decimal_Button.Text;
 
             decimal_Button.Enabled = false;
+
+          
 
         }
 
@@ -83,15 +85,21 @@ namespace OOP_Calculator_JACOB
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
-
-            decimal_Button.enabled = true;
          
         }
 
   
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
+            if (textBox1.TextLength > 0)
+                textBox1.Text = textBox1.Text.Remove(textBox1.TextLength - 1);
+
+                  
+
+
+                 
+
+
         }
 
     }
