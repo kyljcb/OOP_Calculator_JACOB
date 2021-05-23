@@ -14,6 +14,7 @@ namespace OOP_Calculator_JACOB
     {
         int result_Value = 0;
         string operation_Performed = "";
+        bool operation_Pressed = false;
 
         public Form1()
         {
@@ -27,8 +28,12 @@ namespace OOP_Calculator_JACOB
 
         private void button_Click(object sender, EventArgs e)
         {
+            if ((textBox1.Text == "") || (operation_Pressed))
+                textBox1.Clear();
+
             Button button = (Button)sender;
             textBox1.Text = textBox1.Text + button.Text;
+           
         }
 
         private void operator_Click(object sender, EventArgs e)
@@ -37,6 +42,7 @@ namespace OOP_Calculator_JACOB
             Button button = (Button)sender;
             operation_Performed = button.Text;
             result_Value = int.Parse(textBox1.Text);
+            operation_Pressed = true;
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
@@ -56,7 +62,19 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = (result_Value / int.Parse(textBox1.Text)).ToString();
                     break;
 
+                    operation_Pressed = false;
+
             }
+        }
+
+        private void button_Clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+             
         }
     }
 }

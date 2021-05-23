@@ -75,6 +75,7 @@ namespace OOP_Calculator_JACOB
             this.button_Point.TabIndex = 2;
             this.button_Point.Text = ".";
             this.button_Point.UseVisualStyleBackColor = true;
+            this.button_Point.Click += new System.EventHandler(this.button_Click);
             // 
             // button_Plus
             // 
@@ -196,6 +197,7 @@ namespace OOP_Calculator_JACOB
             this.button_Clear.TabIndex = 14;
             this.button_Clear.Text = "AC";
             this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // button_Multiply
             // 
@@ -297,10 +299,13 @@ namespace OOP_Calculator_JACOB
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 71);
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(13, 58);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 27);
+            this.textBox1.Size = new System.Drawing.Size(373, 38);
             this.textBox1.TabIndex = 20;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
