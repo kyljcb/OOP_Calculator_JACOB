@@ -53,12 +53,13 @@ namespace OOP_Calculator_JACOB
             this.button_8 = new System.Windows.Forms.Button();
             this.button_7 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_Negative = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_0
             // 
             this.button_0.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_0.Location = new System.Drawing.Point(12, 370);
+            this.button_0.Location = new System.Drawing.Point(14, 324);
             this.button_0.Name = "button_0";
             this.button_0.Size = new System.Drawing.Size(146, 70);
             this.button_0.TabIndex = 0;
@@ -69,7 +70,7 @@ namespace OOP_Calculator_JACOB
             // button_Point
             // 
             this.button_Point.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Point.Location = new System.Drawing.Point(164, 370);
+            this.button_Point.Location = new System.Drawing.Point(242, 324);
             this.button_Point.Name = "button_Point";
             this.button_Point.Size = new System.Drawing.Size(70, 70);
             this.button_Point.TabIndex = 2;
@@ -80,7 +81,7 @@ namespace OOP_Calculator_JACOB
             // button_Plus
             // 
             this.button_Plus.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Plus.Location = new System.Drawing.Point(240, 370);
+            this.button_Plus.Location = new System.Drawing.Point(242, 236);
             this.button_Plus.Name = "button_Plus";
             this.button_Plus.Size = new System.Drawing.Size(70, 70);
             this.button_Plus.TabIndex = 3;
@@ -91,9 +92,9 @@ namespace OOP_Calculator_JACOB
             // button_Equals
             // 
             this.button_Equals.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Equals.Location = new System.Drawing.Point(316, 282);
+            this.button_Equals.Location = new System.Drawing.Point(318, 324);
             this.button_Equals.Name = "button_Equals";
-            this.button_Equals.Size = new System.Drawing.Size(70, 158);
+            this.button_Equals.Size = new System.Drawing.Size(70, 70);
             this.button_Equals.TabIndex = 4;
             this.button_Equals.Text = "=";
             this.button_Equals.UseVisualStyleBackColor = true;
@@ -102,7 +103,7 @@ namespace OOP_Calculator_JACOB
             // button_Minus
             // 
             this.button_Minus.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Minus.Location = new System.Drawing.Point(240, 282);
+            this.button_Minus.Location = new System.Drawing.Point(318, 233);
             this.button_Minus.Name = "button_Minus";
             this.button_Minus.Size = new System.Drawing.Size(70, 70);
             this.button_Minus.TabIndex = 8;
@@ -113,7 +114,7 @@ namespace OOP_Calculator_JACOB
             // button_3
             // 
             this.button_3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_3.Location = new System.Drawing.Point(164, 282);
+            this.button_3.Location = new System.Drawing.Point(166, 236);
             this.button_3.Name = "button_3";
             this.button_3.Size = new System.Drawing.Size(70, 70);
             this.button_3.TabIndex = 7;
@@ -124,7 +125,7 @@ namespace OOP_Calculator_JACOB
             // button_2
             // 
             this.button_2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_2.Location = new System.Drawing.Point(88, 282);
+            this.button_2.Location = new System.Drawing.Point(90, 236);
             this.button_2.Name = "button_2";
             this.button_2.Size = new System.Drawing.Size(70, 70);
             this.button_2.TabIndex = 6;
@@ -135,7 +136,7 @@ namespace OOP_Calculator_JACOB
             // button_1
             // 
             this.button_1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_1.Location = new System.Drawing.Point(12, 282);
+            this.button_1.Location = new System.Drawing.Point(14, 236);
             this.button_1.Name = "button_1";
             this.button_1.Size = new System.Drawing.Size(70, 70);
             this.button_1.TabIndex = 5;
@@ -191,7 +192,7 @@ namespace OOP_Calculator_JACOB
             // button_Clear
             // 
             this.button_Clear.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Clear.Location = new System.Drawing.Point(316, 111);
+            this.button_Clear.Location = new System.Drawing.Point(318, 65);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(70, 70);
             this.button_Clear.TabIndex = 14;
@@ -202,7 +203,7 @@ namespace OOP_Calculator_JACOB
             // button_Multiply
             // 
             this.button_Multiply.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Multiply.Location = new System.Drawing.Point(240, 196);
+            this.button_Multiply.Location = new System.Drawing.Point(242, 150);
             this.button_Multiply.Name = "button_Multiply";
             this.button_Multiply.Size = new System.Drawing.Size(70, 70);
             this.button_Multiply.TabIndex = 13;
@@ -213,7 +214,7 @@ namespace OOP_Calculator_JACOB
             // button_6
             // 
             this.button_6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_6.Location = new System.Drawing.Point(164, 196);
+            this.button_6.Location = new System.Drawing.Point(166, 150);
             this.button_6.Name = "button_6";
             this.button_6.Size = new System.Drawing.Size(70, 70);
             this.button_6.TabIndex = 12;
@@ -224,7 +225,7 @@ namespace OOP_Calculator_JACOB
             // button_5
             // 
             this.button_5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_5.Location = new System.Drawing.Point(88, 196);
+            this.button_5.Location = new System.Drawing.Point(90, 150);
             this.button_5.Name = "button_5";
             this.button_5.Size = new System.Drawing.Size(70, 70);
             this.button_5.TabIndex = 11;
@@ -235,7 +236,7 @@ namespace OOP_Calculator_JACOB
             // button_4
             // 
             this.button_4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_4.Location = new System.Drawing.Point(12, 196);
+            this.button_4.Location = new System.Drawing.Point(14, 150);
             this.button_4.Name = "button_4";
             this.button_4.Size = new System.Drawing.Size(70, 70);
             this.button_4.TabIndex = 10;
@@ -246,7 +247,7 @@ namespace OOP_Calculator_JACOB
             // button_Delete
             // 
             this.button_Delete.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Delete.Location = new System.Drawing.Point(240, 111);
+            this.button_Delete.Location = new System.Drawing.Point(242, 65);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(70, 70);
             this.button_Delete.TabIndex = 19;
@@ -257,7 +258,7 @@ namespace OOP_Calculator_JACOB
             // button_Divide
             // 
             this.button_Divide.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_Divide.Location = new System.Drawing.Point(316, 196);
+            this.button_Divide.Location = new System.Drawing.Point(318, 150);
             this.button_Divide.Name = "button_Divide";
             this.button_Divide.Size = new System.Drawing.Size(70, 70);
             this.button_Divide.TabIndex = 18;
@@ -268,7 +269,7 @@ namespace OOP_Calculator_JACOB
             // button_9
             // 
             this.button_9.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_9.Location = new System.Drawing.Point(164, 111);
+            this.button_9.Location = new System.Drawing.Point(166, 65);
             this.button_9.Name = "button_9";
             this.button_9.Size = new System.Drawing.Size(70, 70);
             this.button_9.TabIndex = 17;
@@ -279,7 +280,7 @@ namespace OOP_Calculator_JACOB
             // button_8
             // 
             this.button_8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_8.Location = new System.Drawing.Point(88, 111);
+            this.button_8.Location = new System.Drawing.Point(90, 65);
             this.button_8.Name = "button_8";
             this.button_8.Size = new System.Drawing.Size(70, 70);
             this.button_8.TabIndex = 16;
@@ -290,7 +291,7 @@ namespace OOP_Calculator_JACOB
             // button_7
             // 
             this.button_7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button_7.Location = new System.Drawing.Point(12, 111);
+            this.button_7.Location = new System.Drawing.Point(14, 65);
             this.button_7.Name = "button_7";
             this.button_7.Size = new System.Drawing.Size(70, 70);
             this.button_7.TabIndex = 15;
@@ -301,17 +302,28 @@ namespace OOP_Calculator_JACOB
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(13, 58);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(373, 38);
             this.textBox1.TabIndex = 20;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // button_Negative
+            // 
+            this.button_Negative.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_Negative.Location = new System.Drawing.Point(166, 324);
+            this.button_Negative.Name = "button_Negative";
+            this.button_Negative.Size = new System.Drawing.Size(70, 70);
+            this.button_Negative.TabIndex = 21;
+            this.button_Negative.Text = "(-)";
+            this.button_Negative.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 454);
+            this.ClientSize = new System.Drawing.Size(408, 404);
+            this.Controls.Add(this.button_Negative);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_Divide);
@@ -370,6 +382,7 @@ namespace OOP_Calculator_JACOB
         private System.Windows.Forms.Button button_2;
         private System.Windows.Forms.Button button_5;
         private System.Windows.Forms.Button button_6;
+        private System.Windows.Forms.Button button_Negative;
     }
 }
 
