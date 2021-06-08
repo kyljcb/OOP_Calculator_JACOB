@@ -34,20 +34,15 @@ namespace OOP_Calculator_JACOB
 
             Button button = (Button)sender;
 
-            if (!textBox1.Text.Contains("."))
+            if (button.Text == ".")
+            {
+                if (!textBox1.Text.Contains("."))
 
-                textBox1.Text = textBox1.Text + ".";
+                    textBox1.Text = textBox1.Text + ".";
+            }
 
             else
                 textBox1.Text = textBox1.Text + button.Text;
-
-
-
-
-
-
-
-
         }
 
         private void operator_Click(object sender, EventArgs e)
