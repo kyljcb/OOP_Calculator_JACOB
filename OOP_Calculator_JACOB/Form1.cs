@@ -34,19 +34,15 @@ namespace OOP_Calculator_JACOB
 
             Button button = (Button)sender;
 
-            textBox1.Text = textBox1.Text + button.Text;
+            if (!textBox1.Text.Contains("."))
 
-           
-        }
+                textBox1.Text = textBox1.Text + ".";
 
-        private void button_Click_Decimal(object sender, EventArgs e)
-        {
-            Button decimal_Button = (Button)sender;
-
-           if (!textBox1.Text.Contains("."))
-                textBox1.Text = textBox1.Text + decimal_Button.Text;
-           else 
+            else
                 textBox1.Text = textBox1.Text + button.Text;
+
+
+
 
 
 

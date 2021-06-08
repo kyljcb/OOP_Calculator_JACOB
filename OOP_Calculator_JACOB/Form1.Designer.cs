@@ -76,7 +76,7 @@ namespace OOP_Calculator_JACOB
             this.button_Point.TabIndex = 2;
             this.button_Point.Text = ".";
             this.button_Point.UseVisualStyleBackColor = true;
-            this.button_Point.Click += new System.EventHandler(this.button_Click_Decimal);
+            this.button_Point.Click += new System.EventHandler(this.button_Click);
             // 
             // button_Plus
             // 
