@@ -43,11 +43,14 @@ namespace OOP_Calculator_JACOB
         {
             Button decimal_Button = (Button)sender;
 
-            textBox1.Text = textBox1.Text + decimal_Button.Text;
+           if (!textBox1.Text.Contains("."))
+                textBox1.Text = textBox1.Text + decimal_Button.Text;
+           else 
+                textBox1.Text = textBox1.Text + button.Text;
 
-            decimal_Button.Enabled = false;
 
-          
+
+
 
         }
 
@@ -93,13 +96,6 @@ namespace OOP_Calculator_JACOB
         {
             if (textBox1.TextLength > 0)
                 textBox1.Text = textBox1.Text.Remove(textBox1.TextLength - 1);
-
-                  
-
-
-                 
-
-
         }
 
     }
