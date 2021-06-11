@@ -35,15 +35,28 @@ namespace OOP_Calculator_JACOB
 
             Button button = (Button)sender;
 
-            if (button.Text == ".")
             {
-                if (!textBox1.Text.Contains("."))
+                if (button.Text == ".")
+                {
+                    if (!textBox1.Text.Contains("."))
 
-                    textBox1.Text = textBox1.Text + ".";
+                        textBox1.Text = textBox1.Text + ".";
+                }
+
+                else
+                {
+                    textBox1.Text = textBox1.Text + button.Text;
+                }
+
             }
 
-            else
+
+            if (equal_Check == true)
+            {
+                textBox1.Clear();
+                equal_Check = false;
                 textBox1.Text = textBox1.Text + button.Text;
+            }
 
         }
 
@@ -88,6 +101,8 @@ namespace OOP_Calculator_JACOB
             }
             result_Value = Int32.Parse(textBox1.Text);
             operation_Performed = "";
+
+            equal_Check = true;
         }
 
         private void button_Clear_Click(object sender, EventArgs e)
