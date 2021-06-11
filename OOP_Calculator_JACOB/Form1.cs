@@ -15,6 +15,7 @@ namespace OOP_Calculator_JACOB
         double result_Value = 0;
         string operation_Performed = "";
         bool operation_Pressed = false;
+        bool equal_Check = false;
        
         public Form1()
         {
@@ -43,6 +44,13 @@ namespace OOP_Calculator_JACOB
 
             else
                 textBox1.Text = textBox1.Text + button.Text;
+
+            if (equal_Check == true)
+                textBox1.Text = textBox1.Text;
+
+            else
+                textBox1.Text = textBox1.Text;
+
         }
 
         private void operator_Click(object sender, EventArgs e)
@@ -52,6 +60,7 @@ namespace OOP_Calculator_JACOB
             operation_Performed = button.Text;
             result_Value = Double.Parse(textBox1.Text);
             operation_Pressed = true;
+            equal_Check = false;
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
@@ -71,7 +80,9 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
                     break;
                 default:
-                    break;      
+                    break;
+
+                    equal_Check = true;      
 
             }
         }
