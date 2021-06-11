@@ -99,7 +99,7 @@ namespace OOP_Calculator_JACOB
                 default:
                     break;
             }
-            result_Value = Int32.Parse(textBox1.Text);
+            result_Value = Double.Parse(textBox1.Text);
             operation_Performed = "";
 
             equal_Check = true;
