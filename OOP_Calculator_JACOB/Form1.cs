@@ -45,25 +45,36 @@ namespace OOP_Calculator_JACOB
             else
                 textBox1.Text = textBox1.Text + button.Text;
 
-            if (equal_Check == true)
-            {
-                textBox1.Text = String.Empty;
-                textBox1.Text = textBox1.Text + button.Text;
-            }
+            //if (equal_Check == true)
+            //{
+            //    textBox1.Clear();
+            //    textBox1.Text = textBox1.Text + button.Text;
+            //}
 
-            else
-                textBox1.Text = textBox1.Text + button.Text;
+            //else
+            //    textBox1.Text = textBox1.Text + button.Text;
 
         }
 
         private void operator_Click(object sender, EventArgs e)
         {
-
             Button button = (Button)sender;
-            operation_Performed = button.Text;
-            result_Value = Double.Parse(textBox1.Text);
-            operation_Pressed = true;
-            equal_Check = false;
+            if (result_Value != 0)
+            {
+                button_Equals_Click();
+                operation_Pressed = true;
+                operation_Performed = button.Text
+            }
+
+            else
+            {
+      
+                operation_Performed = button.Text;
+                result_Value = Double.Parse(textBox1.Text);
+                operation_Pressed = true;
+            }
+            
+          
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
@@ -85,7 +96,15 @@ namespace OOP_Calculator_JACOB
                 default:
                     break;
 
-                    equal_Check = true;      
+
+                    result_Value = Int32.Parse(textBox1.Text);
+                    operation_Performed = "";
+
+
+                    //equal_Check = true;
+
+                    //if (equal_Check == true)
+                    //    textBox1.Clear();
 
             }
         }
