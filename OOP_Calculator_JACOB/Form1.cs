@@ -46,10 +46,13 @@ namespace OOP_Calculator_JACOB
                 textBox1.Text = textBox1.Text + button.Text;
 
             if (equal_Check == true)
-                textBox1.Text = textBox1.Text;
+            {
+                textBox1.Text = String.Empty;
+                textBox1.Text = textBox1.Text + button.Text;
+            }
 
             else
-                textBox1.Text = textBox1.Text;
+                textBox1.Text = textBox1.Text + button.Text;
 
         }
 
