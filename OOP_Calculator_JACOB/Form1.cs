@@ -48,11 +48,11 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = textBox1.Text + button.Text;
                 }
 
-                if (button.Text == "0")
-                {
-                    if (textBox1.Text.Contains("÷"))
-                        textBox1.Text = "Undefinded";
-                }
+                //if (textBox1.Text.Contains())
+                //{
+                //    if (textBox1.Text.Contains("÷"))
+                //        textBox1.Text = "Undefinded";
+                //}
 
             }
 
@@ -83,7 +83,17 @@ namespace OOP_Calculator_JACOB
                 operation_Pressed = true;
             }
 
-            
+            if (textBox1.Text == "÷")
+            {
+                if (textBox1.Text == "0")
+                {
+                    result_Value = 0;
+
+                    textBox1.Text = "undefinded";
+
+                }
+                    
+            }    
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
