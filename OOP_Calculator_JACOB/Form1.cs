@@ -83,17 +83,12 @@ namespace OOP_Calculator_JACOB
                 operation_Pressed = true;
             }
 
-            if (textBox1.Text == "÷")
+            if (textBox1.Text == "0")
             {
-                if (textBox1.Text == "0")
-                {
-                    result_Value = 0;
-
-                    textBox1.Text = "undefinded";
-
-                }
-                    
-            }    
+                if (operation_Performed == "÷")
+                    textBox1.Text = "Undefined";
+            }
+             
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
