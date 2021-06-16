@@ -48,9 +48,9 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = textBox1.Text + button.Text;
                 }
 
-                if (button.Text == "÷")
+                if (button.Text == "0")
                 {
-                    if (button.Text == "0")
+                    if (textBox1.Text.Contains("÷"))
                         textBox1.Text = "Undefinded";
                 }
 
