@@ -48,6 +48,12 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = textBox1.Text + button.Text;
                 }
 
+                if (button.Text == "÷")
+                {
+                    if (button.Text == "0")
+                        textBox1.Text = "Undefinded";
+                }
+
             }
 
 
@@ -72,11 +78,12 @@ namespace OOP_Calculator_JACOB
 
             else
             {
-
                 operation_Performed = button.Text;
                 result_Value = Double.Parse(textBox1.Text);
                 operation_Pressed = true;
             }
+
+            
         }
 
         private void button_Equals_Click(object sender, EventArgs e)
