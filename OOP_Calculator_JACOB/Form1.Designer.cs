@@ -317,6 +317,7 @@ namespace OOP_Calculator_JACOB
             this.button_Negative.TabIndex = 21;
             this.button_Negative.Text = "(-)";
             this.button_Negative.UseVisualStyleBackColor = true;
+            this.button_Negative.Click += new System.EventHandler(this.negativeButton_Click);
             // 
             // Form1
             // 

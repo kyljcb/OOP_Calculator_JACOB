@@ -13,11 +13,10 @@ namespace OOP_Calculator_JACOB
     public partial class Form1 : Form
     {
         double result_Value = 0;
+        string negate = "";
         string operation_Performed = "";
         bool operation_Pressed = false;
         bool equal_Check = false;
-        bool zero_Check = false;
-        string error;
        
         public Form1()
         {
@@ -41,36 +40,24 @@ namespace OOP_Calculator_JACOB
                 if (button.Text == ".")
                 {
                     if (!textBox1.Text.Contains("."))
-
                         textBox1.Text = textBox1.Text + ".";
                 }
-
                 else
                 {
                     textBox1.Text = textBox1.Text + button.Text;
                 }
-
-                //if (textBox1.Text.Contains())
-                //{
-                //    if (textBox1.Text.Contains("÷"))
-                //        textBox1.Text = "Undefinded";
-                //}
-
             }
-
-
             if (equal_Check == true)
             {
                 textBox1.Clear();
                 equal_Check = false;
                 textBox1.Text = textBox1.Text + button.Text;
             }
-
         }
-
         private void operator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
+
             if (result_Value != 0)
             {
                 button_Equals.PerformClick(); // learned performclick function
@@ -85,14 +72,12 @@ namespace OOP_Calculator_JACOB
                 operation_Pressed = true;
             }
 
-            //if (textBox1.Text == "0")
-            //{
-            //    if (operation_Performed == "÷")
-            //        textBox1.Text = "Undefined";
-            //}
-             
+            if (textBox1.Text == "0")
+            {
+                if (operation_Performed == "÷")
+                    textBox1.Text = "Undefined";
+            }
         }
-
         private void button_Equals_Click(object sender, EventArgs e)
         {
 
@@ -108,16 +93,8 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = (result_Value * Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "÷":
-                    {
-                        if (textBox1.Text.Contains("0"))
-                        {
-                            error = "Undefined";
-                            textBox1.Text = error.ToString();
-                        }
-                        else
-                            textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
-                        break;
-                    }
+                    textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
+                    break;
                 default:
                     break;
             }
@@ -126,19 +103,32 @@ namespace OOP_Calculator_JACOB
 
             equal_Check = true;
         }
-
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
             result_Value = 0;
         }
-
-  
         private void button_Delete_Click(object sender, EventArgs e)
         {
             if (textBox1.TextLength > 0)
                 textBox1.Text = textBox1.Text.Remove(textBox1.TextLength - 1);
         }
 
+        private void negativeButton_Click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+
+            if (!textBox1.Text.Contains("-") && textBox1.Text != "0")
+            { 
+                textBox1.Text = textBox1.Text.Insert(0, "-"); 
+            }
+            else
+            {
+                if (textBox1.Text != "0")
+                {
+                    textBox1.Text = textBox1.Text.Remove(0, 1); 
+                }
+            }
+        }
     }
 }
