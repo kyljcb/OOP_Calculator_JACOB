@@ -83,11 +83,11 @@ namespace OOP_Calculator_JACOB
                 operation_Pressed = true;
             }
 
-            if (textBox1.Text == "0")
-            {
-                if (operation_Performed == "÷")
-                    textBox1.Text = "Undefined";
-            }
+            //if (textBox1.Text == "0")
+            //{
+            //    if (operation_Performed == "÷")
+            //        textBox1.Text = "Undefined";
+            //}
              
         }
 
@@ -106,8 +106,13 @@ namespace OOP_Calculator_JACOB
                     textBox1.Text = (result_Value * Double.Parse(textBox1.Text)).ToString();
                     break;
                 case "÷":
-                    textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
-                    break;
+                    {
+                        if (textBox1.Text == "0")
+                            textBox1.Text = "Undefined";
+                        else
+                            textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
+                        break;
+                    }
                 default:
                     break;
             }
