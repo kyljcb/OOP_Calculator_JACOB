@@ -56,27 +56,31 @@ namespace OOP_Calculator_JACOB
         }
         private void operator_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-
-            if (result_Value != 0)
+            try
             {
-                button_Equals.PerformClick(); // learned performclick function
-                operation_Pressed = true;
-                operation_Performed = button.Text; 
-            }
+                Button button = (Button)sender;
 
-            else
-            {
-                operation_Performed = button.Text;
-                result_Value = Double.Parse(textBox1.Text);
-                operation_Pressed = true;
-            }
+                if (result_Value != 0)
+                {
+                    button_Equals.PerformClick(); // learned performclick function
+                    operation_Pressed = true;
+                    operation_Performed = button.Text;
+                }
 
-            if (textBox1.Text == "0")
-            {
-                if (operation_Performed == "÷")
-                    textBox1.Text = "Undefined";
+                else
+                {
+                    operation_Performed = button.Text;
+                    result_Value = Double.Parse(textBox1.Text);
+                    operation_Pressed = true;
+                }
+
+                if (textBox1.Text == "0")
+                {
+                    if (operation_Performed == "÷")
+                        textBox1.Text = "Undefined";
+                }
             }
+            catch { }
         }
         private void button_Equals_Click(object sender, EventArgs e)
         {
@@ -100,9 +104,14 @@ namespace OOP_Calculator_JACOB
             }
             result_Value = Double.Parse(textBox1.Text);
             operation_Performed = "";
-
             equal_Check = true;
+
+
+
+            if (textBox1.Text == "∞")
+                textBox1.Text = "Undefined";
         }
+
         private void button_Clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
@@ -126,7 +135,7 @@ namespace OOP_Calculator_JACOB
             {
                 if (textBox1.Text != "0")
                 {
-                    textBox1.Text = textBox1.Text.Remove(0, 1); 
+                    textBox1.Text = textBox1.Text.Remove(0, 1);
                 }
             }
         }
