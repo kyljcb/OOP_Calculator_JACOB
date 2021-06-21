@@ -16,6 +16,8 @@ namespace OOP_Calculator_JACOB
         string operation_Performed = "";
         bool operation_Pressed = false;
         bool equal_Check = false;
+        bool zero_Check = false;
+        string error;
        
         public Form1()
         {
@@ -107,8 +109,11 @@ namespace OOP_Calculator_JACOB
                     break;
                 case "÷":
                     {
-                        if (textBox1.Text == "0")
-                            textBox1.Text = "Undefined";
+                        if (textBox1.Text.Contains("0"))
+                        {
+                            error = "Undefined";
+                            textBox1.Text = error.ToString();
+                        }
                         else
                             textBox1.Text = (result_Value / Double.Parse(textBox1.Text)).ToString();
                         break;
