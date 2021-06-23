@@ -106,8 +106,6 @@ namespace OOP_Calculator_JACOB
             operation_Performed = "";
             equal_Check = true;
 
-
-
             if (textBox1.Text == "∞")
                 textBox1.Text = "Undefined";
         }
