@@ -52,7 +52,7 @@ namespace OOP_Calculator_JACOB
             this.button_9 = new System.Windows.Forms.Button();
             this.button_8 = new System.Windows.Forms.Button();
             this.button_7 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.resultBox = new System.Windows.Forms.TextBox();
             this.button_Negative = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -317,14 +317,14 @@ namespace OOP_Calculator_JACOB
             this.button_7.UseVisualStyleBackColor = false;
             this.button_7.Click += new System.EventHandler(this.button_Click);
             // 
-            // textBox1
+            // resultBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(373, 38);
-            this.textBox1.TabIndex = 20;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.resultBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.resultBox.Location = new System.Drawing.Point(12, 12);
+            this.resultBox.Name = "resultBox";
+            this.resultBox.Size = new System.Drawing.Size(373, 38);
+            this.resultBox.TabIndex = 20;
+            this.resultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button_Negative
             // 
@@ -345,7 +345,7 @@ namespace OOP_Calculator_JACOB
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(408, 404);
             this.Controls.Add(this.button_Negative);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.resultBox);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_Divide);
             this.Controls.Add(this.button_9);
@@ -399,7 +399,7 @@ namespace OOP_Calculator_JACOB
         private System.Windows.Forms.Button button_9;
         private System.Windows.Forms.Button button_8;
         private System.Windows.Forms.Button button_7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.Button button_2;
         private System.Windows.Forms.Button button_5;
         private System.Windows.Forms.Button button_6;
