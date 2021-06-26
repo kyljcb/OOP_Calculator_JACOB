@@ -108,7 +108,7 @@ namespace OOP_Calculator_JACOB
             equal_Check = true;
 
             // code block for undefined numbers.
-                if (resultBox.Text == "∞")
+                if ((resultBox.Text == "∞") || (resultBox.Text == "NaN"))
                     resultBox.Text = "Undefined";
         }
 
