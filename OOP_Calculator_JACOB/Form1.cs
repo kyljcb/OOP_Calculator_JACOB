@@ -21,12 +21,10 @@ namespace OOP_Calculator_JACOB
         {
             InitializeComponent();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
         private void button_Click(object sender, EventArgs e)
         {
             // clears the textbox if there is no text or if an operation is pressed. 
@@ -35,13 +33,11 @@ namespace OOP_Calculator_JACOB
 
          operation_Pressed = false;
 
-            
             Button button = (Button)sender;
             {
                 // code block for preventing repeating decimal points
                 if (button.Text == ".")
                 {
-
                     if (!resultBox.Text.Contains("."))
                         resultBox.Text = resultBox.Text + "."; 
                 }
@@ -50,7 +46,6 @@ namespace OOP_Calculator_JACOB
                     resultBox.Text = resultBox.Text + button.Text;
                 }
             }
-
                  // code block so that when a number is pressed after pressing equals, resultbox would be cleared.
                 if (equal_Check == true)
                 {
@@ -101,30 +96,27 @@ namespace OOP_Calculator_JACOB
                 default:
                     break;
             }
+                // resets the values
+                result_Value = Double.Parse(resultBox.Text);
+                operation_Performed = "";
+                equal_Check = true;
 
-            // resets the values
-            result_Value = Double.Parse(resultBox.Text);
-            operation_Performed = "";
-            equal_Check = true;
-
-            // code block for undefined numbers.
+                // code block for undefined numbers.
                 if ((resultBox.Text == "∞") || (resultBox.Text == "NaN"))
-                    resultBox.Text = "Undefined";
+                        resultBox.Text = "Undefined";
         }
-
         private void button_Clear_Click(object sender, EventArgs e)
         {
-            // button to reset the value of the result box. 
-            resultBox.Text = "";
-            result_Value = 0;
+                // button to reset the value of the result box. 
+                resultBox.Text = "";
+                result_Value = 0;
         }
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            // button that acts as the backspace key
-            if (resultBox.TextLength > 0)
-                resultBox.Text = resultBox.Text.Remove(resultBox.TextLength - 1);
+                // button that acts as the backspace key
+                if (resultBox.TextLength > 0)
+                    resultBox.Text = resultBox.Text.Remove(resultBox.TextLength - 1);
         }
-
         private void negativeButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
