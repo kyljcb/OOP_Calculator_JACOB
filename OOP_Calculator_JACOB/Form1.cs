@@ -14,10 +14,7 @@ namespace OOP_Calculator_JACOB
     {
         Class1 c = new Class1();
 
-        double result_Value = 0;
-        string operation_Performed = "";
-        bool operation_Pressed = false;
-        bool equal_Check = false;
+      
        
         public Form1()
         {
@@ -30,10 +27,10 @@ namespace OOP_Calculator_JACOB
         private void button_Click(object sender, EventArgs e)
         {
             // clears the textbox if there is no text or if an operation is pressed. 
-            if ((resultBox.Text == "") || (operation_Pressed))
+            if ((resultBox.Text == "") || (c.Operation_Pressed))
                 resultBox.Clear();
 
-         operation_Pressed = false;
+         c.Operation_Pressed = false;
 
             Button button = (Button)sender;
             {
@@ -80,24 +77,7 @@ namespace OOP_Calculator_JACOB
         }
         private void button_Equals_Click(object sender, EventArgs e)
         {
-            // code block for the calculation part. 
-            switch(operation_Performed)
-            {
-                case "+":
-                    resultBox.Text = (result_Value + Double.Parse(resultBox.Text)).ToString();
-                    break;
-                case "-":
-                    resultBox.Text = (result_Value - Double.Parse(resultBox.Text)).ToString();
-                    break;
-                case "x":
-                    resultBox.Text = (result_Value * Double.Parse(resultBox.Text)).ToString();
-                    break;
-                case "÷":
-                    resultBox.Text = (result_Value / Double.Parse(resultBox.Text)).ToString();
-                    break;
-                default:
-                    break;
-            }
+            
                 // resets the values
                 result_Value = Double.Parse(resultBox.Text);
                 operation_Performed = "";
