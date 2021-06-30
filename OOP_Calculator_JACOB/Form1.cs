@@ -12,6 +12,8 @@ namespace OOP_Calculator_JACOB
 {
     public partial class Form1 : Form
     {
+        Class1 c = new Class1();
+
         double result_Value = 0;
         string operation_Performed = "";
         bool operation_Pressed = false;
