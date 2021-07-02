@@ -12,28 +12,33 @@ namespace OOP_Calculator_JACOB
         string operation_Performed = "";
         bool operation_Pressed = false;
         bool equal_Check = false;
-
+        string rBox = "";
+        
         public double Result_Value { get => result_Value; set => result_Value = value; }
         public string Operation_Performed { get => operation_Performed; set => operation_Performed = value; }
         public bool Operation_Pressed { get => operation_Pressed; set => operation_Pressed = value; }
-        public bool Equal_Check { get => equal_Check; set => equal_Check = value; }
+        public bool Equal_Check { get => equal_Check; set => equal_Check = value; } 
+
+        public string RBox { get => rBox; set => rBox = value; }
 
         public void Solve()
         {
+
+
             // code block for the calculation part. 
             switch (Operation_Performed)
             {
                 case "+":
-                    resultBox.Text = (Result_Value + Double.Parse(resultBox.Text)).ToString();
+                    RBox = (Result_Value + Double.Parse(RBox)).ToString();
                     break;
                 case "-":
-                    resultBox.Text = (Result_Value - Double.Parse(resultBox.Text)).ToString();
+                    RBox = (Result_Value - Double.Parse(RBox)).ToString();
                     break;
                 case "x":
-                    resultBox.Text = (Result_Value * Double.Parse(resultBox.Text)).ToString();
+                    RBox = (Result_Value * Double.Parse(RBox)).ToString();
                     break;
                 case "÷":
-                    resultBox.Text = (Result_Value / Double.Parse(resultBox.Text)).ToString();
+                    RBox = (Result_Value / Double.Parse(RBox)).ToString();
                     break;
                 default:
                     break;
@@ -43,4 +48,4 @@ namespace OOP_Calculator_JACOB
 
 
     }
-}
+

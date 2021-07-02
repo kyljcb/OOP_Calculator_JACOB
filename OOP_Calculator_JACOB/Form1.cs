@@ -13,8 +13,6 @@ namespace OOP_Calculator_JACOB
     public partial class Form1 : Form
     {
         Class1 c = new Class1();
-
-      
        
         public Form1()
         {
@@ -46,10 +44,10 @@ namespace OOP_Calculator_JACOB
                 }
             }
                  // code block so that when a number is pressed after pressing equals, resultbox would be cleared.
-                if (equal_Check == true)
+                if (c.Equal_Check == true)
                 {
                     resultBox.Clear();
-                    equal_Check = false;
+                c.Equal_Check = false;
                     resultBox.Text = resultBox.Text + button.Text;
                 }
         }
@@ -60,28 +58,29 @@ namespace OOP_Calculator_JACOB
                 Button button = (Button)sender;
                 
                 // code block so that operator buttons would perform themselves if user decides to use multiple operators before pressing the equal button.
-                if (result_Value != 0)
+                if (c.Result_Value != 0)
                 {
                     button_Equals.PerformClick(); // essentially performs the equal button 
-                    operation_Pressed = true;
-                    operation_Performed = button.Text;
+                    c.Operation_Pressed = true;
+                    c.Operation_Performed = button.Text;
                 }
                 else
                 {
-                    operation_Performed = button.Text;
-                    result_Value = Double.Parse(resultBox.Text);
-                    operation_Pressed = true;
+                    c.Operation_Performed = button.Text;
+                    c.Result_Value = Double.Parse(resultBox.Text);
+                    c.Operation_Pressed = true;
                 }
             }
             catch { }
         }
         private void button_Equals_Click(object sender, EventArgs e)
         {
-            
-                // resets the values
-                result_Value = Double.Parse(resultBox.Text);
-                operation_Performed = "";
-                equal_Check = true;
+            c.RBox = resultBox.Text;
+            c.Solve();
+            // resets the values
+            c.Result_Value = Double.Parse(resultBox.Text);
+                c.Operation_Performed = "";
+            c.Equal_Check = true;
 
                 // code block for undefined numbers.
                 if ((resultBox.Text == "∞") || (resultBox.Text == "NaN"))
@@ -91,7 +90,7 @@ namespace OOP_Calculator_JACOB
         {
                 // button to reset the value of the result box. 
                 resultBox.Text = "";
-                result_Value = 0;
+            c.Result_Value = 0;
         }
         private void button_Delete_Click(object sender, EventArgs e)
         {
