@@ -42,8 +42,16 @@ namespace OOP_Calculator_JACOB
                     break;
             }
         }
+
+        public void resetValues()
+        {
+            // resets the values
+            Result_Value = Double.Parse(RBox);
+            Operation_Performed = "";
+            Equal_Check = true;
         }
 
-
     }
+
+}
 

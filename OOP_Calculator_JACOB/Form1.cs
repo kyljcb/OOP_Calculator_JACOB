@@ -56,8 +56,7 @@ namespace OOP_Calculator_JACOB
         {
             try // try catch so program won't crash if an operator button is pressed first
             {
-                Button button = (Button)sender;
-                
+                Button button = (Button)sender;  
                 // code block so that operator buttons would perform themselves if user decides to use multiple operators before pressing the equal button.
                 if (c.Result_Value != 0)
                 {
@@ -78,13 +77,8 @@ namespace OOP_Calculator_JACOB
         {
             c.RBox = resultBox.Text;
             c.Solve();
-
             resultBox.Text = c.RBox;
-
-            // resets the values
-            c.Result_Value = Double.Parse(resultBox.Text);
-                c.Operation_Performed = "";
-            c.Equal_Check = true;
+            c.resetValues();
 
             // code block for undefined numbers.
                 if ((resultBox.Text == "∞") || (resultBox.Text == "NaN"))
@@ -98,9 +92,9 @@ namespace OOP_Calculator_JACOB
         }
         private void button_Delete_Click(object sender, EventArgs e)
         {
-                // button that acts as the backspace key
-                if (resultBox.TextLength > 0)
-                    resultBox.Text = resultBox.Text.Remove(resultBox.TextLength - 1);
+            // button that acts as the backspace key
+            if (resultBox.TextLength > 0)
+              resultBox.Text = resultBox.Text.Remove(resultBox.TextLength - 1);
         }
         private void negativeButton_Click(object sender, EventArgs e)
         {
