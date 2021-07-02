@@ -29,10 +29,11 @@ namespace OOP_Calculator_JACOB
         {
             // clears the textbox if there is no text or if an operation is pressed. 
             if ((resultBox.Text == "") || (operation_Pressed))
+            {
                 resultBox.Clear();
-
-         operation_Pressed = false;
-
+                operation_Pressed = false;
+            }
+             
             Button button = (Button)sender;
             {
                 // code block for preventing repeating decimal points
