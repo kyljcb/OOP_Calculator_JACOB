@@ -23,8 +23,6 @@ namespace OOP_Calculator_JACOB
 
         public void Solve()
         {
-
-
             // code block for the calculation part. 
             switch (Operation_Performed)
             {

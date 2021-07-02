@@ -26,9 +26,10 @@ namespace OOP_Calculator_JACOB
         {
             // clears the textbox if there is no text or if an operation is pressed. 
             if ((resultBox.Text == "") || (c.Operation_Pressed))
+            {
                 resultBox.Clear();
-
-         c.Operation_Pressed = false;
+                c.Operation_Pressed = false;
+            }
 
             Button button = (Button)sender;
             {
@@ -77,19 +78,22 @@ namespace OOP_Calculator_JACOB
         {
             c.RBox = resultBox.Text;
             c.Solve();
+
+            resultBox.Text = c.RBox;
+
             // resets the values
             c.Result_Value = Double.Parse(resultBox.Text);
                 c.Operation_Performed = "";
             c.Equal_Check = true;
 
-                // code block for undefined numbers.
+            // code block for undefined numbers.
                 if ((resultBox.Text == "∞") || (resultBox.Text == "NaN"))
                         resultBox.Text = "Undefined";
         }
         private void button_Clear_Click(object sender, EventArgs e)
         {
-                // button to reset the value of the result box. 
-                resultBox.Text = "";
+            // button to reset the value of the result box. 
+            resultBox.Text = "";
             c.Result_Value = 0;
         }
         private void button_Delete_Click(object sender, EventArgs e)
