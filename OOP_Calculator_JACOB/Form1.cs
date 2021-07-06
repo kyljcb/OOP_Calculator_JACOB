@@ -86,20 +86,17 @@ namespace OOP_Calculator_JACOB
         }
         private void button_Clear_Click(object sender, EventArgs e)
         {
-            // button to reset the value of the result box. 
-            resultBox.Text = "";
-            c.Result_Value = 0;
+            c.clear();
+            resultBox.Text = c.RBox;
         }
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            // button that acts as the backspace key
-            if (resultBox.TextLength > 0)
-              resultBox.Text = resultBox.Text.Remove(resultBox.TextLength - 1);
+            c.delete();
+            resultBox.Text = c.RBox;
         }
         private void negativeButton_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-
             // codeblock for the negative button. 
             if (!resultBox.Text.Contains("-") && resultBox.Text != "0")
             { 

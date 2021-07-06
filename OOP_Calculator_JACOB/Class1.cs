@@ -50,7 +50,19 @@ namespace OOP_Calculator_JACOB
             Operation_Performed = "";
             Equal_Check = true;
         }
-
+        public void clear()
+        {
+            // button to reset the value of the result box. 
+            rBox = "";
+            Result_Value = 0;
+        }
+        public void delete()
+        {
+            // button that acts as the backspace key
+            if (rBox.Length > 0)
+                rBox = rBox.Remove(rBox.Length - 1);
+        }
+        
     }
 
 }
